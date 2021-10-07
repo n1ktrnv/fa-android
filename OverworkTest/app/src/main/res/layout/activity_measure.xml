@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeasureActivity">
+
+
+    <TextView
+        android:id="@+id/firstStepText"
+        style="@style/main_text"
+        android:text="@string/first_step_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lyingPulseEdit"
+        style="@style/field_number"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstStepText" />
+
+    <TextView
+        style="@style/field_number_right_label"
+        android:text="@string/pulse_measure"
+        app:layout_constraintBottom_toBottomOf="@+id/lyingPulseEdit"
+        app:layout_constraintStart_toEndOf="@+id/lyingPulseEdit" />
+
+    <TextView
+        android:id="@+id/secondStepText"
+        style="@style/main_text"
+        android:layout_marginTop="40dp"
+        android:text="@string/second_step_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyingPulseEdit" />
+
+    <EditText
+        android:id="@+id/standingPulseEdit"
+        style="@style/field_number"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondStepText" />
+
+    <TextView
+        style="@style/field_number_right_label"
+        android:text="@string/pulse_measure"
+        app:layout_constraintBottom_toBottomOf="@+id/standingPulseEdit"
+        app:layout_constraintStart_toEndOf="@+id/standingPulseEdit" />
+
+    <TextView
+        android:id="@+id/timerView"
+        style="@style/timer"
+        android:onClick="onTimerClick"
+        app:layout_constraintBottom_toTopOf="@+id/next_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/standingPulseEdit" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNextButtonClick"
+        android:text="@string/button_next_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/longPeriodTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 мин."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onSetTimerButtonClick" />
+
+    <Button
+        android:id="@+id/shortPeriodTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1 мин."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/longPeriodTimerButton"
+        android:onClick="onSetTimerButtonClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Тест на переутомление</string>
+    <string name="test_description">Для прохождения теста необходимо иметь возможность лечь на 5 минут. Продолжительность теста около 10-15 минут.</string>
+    <string name="birthdate_label_text">Дата рождения</string>
+    <string name="gender_label_text">Пол</string>
+    <string name="button_next_text">Далее</string>
+    <string name="pulse_measure">уд./мин.</string>
+    <string name="first_step_text">Шаг 1. Необходимо лечь и лежать без движений 5 минут. Затем посчитайте пульс в течение минуты.</string>
+    <string name="second_step_text">Шаг 2. Необходимо встать и стоять без движений 5 минут. Затем посчитайте пульс в течение минуты.</string>
+    <string name="good_result_text">Введенные значения соответствуют отсутствию переутомления.</string>
+    <string name="medium_result_text">Введенные значения соответствуют небольшому переутомления. Рекомендуется снижение нагрузки.</string>
+    <string name="bad_result_text">Введенные значения соответствуют высокому уровню переутомления. Рекомендуется снижение нагрузки или отпуск.</string>
+    <string name="warning_result_text">Не забывайте о регулярном профессиональном медицинском осмотре.</string>
+
+    <string-array name="genders">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>января</item>
+        <item>февраля</item>
+        <item>марта</item>
+        <item>апреля</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>августа</item>
+        <item>сентября</item>
+        <item>октября</item>
+        <item>ноября</item>
+        <item>декабря</item>
+    </string-array>
+
+</resources>
