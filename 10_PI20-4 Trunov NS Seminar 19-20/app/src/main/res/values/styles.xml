@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="todo_list">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">400dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="todo_edit_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="todo_add_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Добавить</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+</resources>
